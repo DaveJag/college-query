@@ -6,11 +6,11 @@ var mongoose = require('mongoose');
 // Create Schema class
 var Schema = mongoose.Schema;
 
-// Create Article schema
+// Create College schema
 var CollegeSchema = new Schema({
 
-    // Name of major field of study (biology, engineering, etc.)
-    major: {
+    // Name of program relating to field of study (biology, engineering, etc.)
+    programs: {
         type: String,
         required: true
     },

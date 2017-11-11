@@ -1,10 +1,8 @@
-// /app/components/utils/helpers.js
-
 // Node Dependencies
 var axios = require('axios');
 
 // API Request Function
-var schoolQuery = function(majors){
+var schoolQuery = function(programs){
 
   //var authKey = "zCBgIj5wrFlUIvjmWu2CzFPg1PqRWzbc8zqCVnLZ";
   // Dave's key:
@@ -12,7 +10,7 @@ var schoolQuery = function(majors){
 
 
    var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api-key="+ authKey + "&q=" +
-              majors;
+              programs;
 
 
   // For reference:
@@ -76,7 +74,7 @@ var apiSave = function(schoolObj){
 
     // Re-format the school Object to match the Mongo Model (ie we need to take off the the id)
     var params = new URLSearchParams();
-    params.append("majors", schoolObj.title);
+    params.append("programs", schoolObj.title);
 //    params.append("date", articleObj.date);
 //    params.append("url", articleObj.url);
     axios.post(apiURL, params).then(function(response){
@@ -126,3 +124,40 @@ var apiGet = function(){
 }
 
 
+
+
+
+// API Post Request Function
+var apiDelete = function(deleteSchoolId){
+
+  // Get API Post URL (this allows it to work in both localhost and heroku)
+  var apiURL = window.location.origin + '/api/delete/' + deleteSchoolId;
+
+  // Create a JavaScript *Promise*
+  return new Promise(function (fulfill, reject){
+
+    // Send the MongoDB Id for deletion
+    axios.post(apiURL).then(function(response) {
+
+      // Error handling / fullfil promise if successful query
+      if(response){
+        fulfill(response);
+      }
+      else{
+        reject("");
+      }
+
+    });
+
+  });
+
+}
+
+
+// Export all helper functions
+module.exports = {
+ schoolQuery,
+ apiSave,
+ apiGet,
+ apiDelete
+}
