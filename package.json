@@ -1,0 +1,26 @@
+{
+  "name": "college-query",
+  "version": "1.0.0",
+  "description": "Project 3 - An application to help students locate colleges by degree, location, and other criteria.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaveJag/college-query.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaveJag/college-query/issues"
+  },
+  "homepage": "https://github.com/DaveJag/college-query#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.1",
+    "morgan": "^1.9.0"
+  }
+}
