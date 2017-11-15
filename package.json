@@ -28,10 +28,14 @@
     "babel-preset-react": "^6.24.1",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "logger": "0.0.1",
     "mongoose": "^4.13.1",
     "morgan": "^1.9.0",
+    "nodemon": "^1.12.1",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
-    "webpack": "^3.8.1"
+    "react-router": "^4.2.0",
+    "webpack": "^3.8.1",
+    "webpack-config": "^7.5.0"
   }
 }

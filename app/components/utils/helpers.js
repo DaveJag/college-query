@@ -2,15 +2,15 @@
 var axios = require('axios');
 
 // API Request Function
-var schoolQuery = function(programs){
+var schoolQuery = function(programs, field, name){
 
   //var authKey = "zCBgIj5wrFlUIvjmWu2CzFPg1PqRWzbc8zqCVnLZ";
   // Dave's key:
   var authKey = "Jqw0thp4crLxCS338NcnyaeQCzW7gJWJPlTcPR3t";
 
 
-   var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api-key="+ authKey + "&q=" +
-              programs;
+   var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api-key="+ authKey + "&programs=" +
+              programs + "&field=" + field + "&name=" + name;
 
 
   // For reference:
@@ -74,9 +74,9 @@ var apiSave = function(schoolObj){
 
     // Re-format the school Object to match the Mongo Model (ie we need to take off the the id)
     var params = new URLSearchParams();
-    params.append("programs", schoolObj.title);
-//    params.append("date", articleObj.date);
-//    params.append("url", articleObj.url);
+    params.append("programs", schoolObj.programs);
+    params.append("field", schoolObj.field);
+    params.append("name", schoolObj.name);
     axios.post(apiURL, params).then(function(response){
 
       // Error handling / fullfil promise if successful query
