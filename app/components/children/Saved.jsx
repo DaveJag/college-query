@@ -21,7 +21,7 @@ var Saved = React.createClass({
 
  _handleDelete: function(event) {
 
-   // Collect clicked article’s id
+   // Collect clicked school’s id
    var schoolMongoId = event.target.value;
 
    // Copy "this" into "that" so component is accessible inside functions.
@@ -56,8 +56,7 @@ var Saved = React.createClass({
        <div className="panel-body">
          <ul className="list-group col-md-8 col-md-offset-2">
 
-           {/* ++++++++++++++++++++++++++++++++ ITERATE HERE ++++++++++++++++++++++++++++++++ */}
-           {/* Use map function to loop through array in JSX */}
+           // Use map function to loop through array in JSX
            {this.props.mongoResults.map(function(search, i) {
 
              return (
@@ -86,4 +85,5 @@ var Saved = React.createClass({
 
 
 // Export component back for use in Main file
+
 module.exports = Saved;
