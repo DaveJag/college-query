@@ -10,7 +10,8 @@ var Query = React.createClass({
       programs: "",
       field: "",
       name: ""
-  },
+  };
+},
   // When user submits
   _handleSubmit: function(event) {
     // prevent HTML from trying to submit form if user hits enter key instead of
