@@ -9,7 +9,7 @@ var schoolQuery = function(programs, field, name){
   var authKey = "Jqw0thp4crLxCS338NcnyaeQCzW7gJWJPlTcPR3t";
 
 
-   var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api-key="+ authKey + "&programs=" +
+   var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+ authKey + "&programs=" +
               programs + "&field=" + field + "&name=" + name;
 
 

@@ -9,24 +9,51 @@ var Schema = mongoose.Schema;
 // Create College schema
 var CollegeSchema = new Schema({
 
-    // Name of program relating to field of study (biology, engineering, etc.)
+    // Degree type, 2 or 4 years
     programs: {
-        type: String,
+        type: Integer,
         required: true
     },
-/* Leftovers from NYTREACT app.
-    // Date of Article
-    date: {
+
+    // Major
+    field: {
         type: String,
         required: true
     },
 
-    // Link to Article
-    url: {
+    // School Name
+    name: {
         type: String,
         required: true
     }
-*/
+
+    /*
+    },
+    // School URL
+    school_url: {
+        type: String,
+        required: true
+    },
+
+    //School region by ID
+    region_id: {
+        type: Integer,
+        required: true
+    },
+
+     //School state
+    state: {
+          type: String,
+         required: true
+    },
+
+    //School city
+    city: {
+         type: String,
+         required: true
+    }
+    */
+
 });
 
 // Create College model with Mongoose
