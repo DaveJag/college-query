@@ -11,7 +11,7 @@ var CollegeSchema = new Schema({
 
     // Degree type, 2 or 4 years
     programs: {
-        type: Integer,
+        type: Number,
         required: true
     },
 
