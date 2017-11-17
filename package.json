@@ -35,7 +35,6 @@
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-router": "^4.2.0",
-    "webpack": "^3.8.1",
     "webpack-config": "^7.5.0"
   }
 }

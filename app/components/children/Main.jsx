@@ -8,6 +8,9 @@ var Search = require("./Search.jsx");
 var Saved = require("./Saved.jsx");
 // Requiring helper.js for making API calls
 var helpers = require("../utils/helpers.js");
+
+console.log("Called from Main.jsx");
+
 // Create the Main Component
 var Main = React.createClass({
   // Here we set a generic state

@@ -63,8 +63,8 @@ var Saved = React.createClass({
                <li key={search._id} className="list-group-item" style={ {borderWidth: "0px"} }>
                  <div className="input-group">
                    <div type="text" className="form-control">
-                     <b><a href={search.url} target="_new" style={ {color: "black"} }>{search.programs}</a></b>
-                     <i> {search.date.substring(0, 10)}</i>
+                     <b><a href={search.name} target="_new" style={ {color: "black"} }>{search.name}</a></b>
+                     //<i> {search.date.substring(0, 10)}</i>
                    </div>
                    <span className="input-group-btn">
                      <button className="btn btn-danger" type="button" onClick={that._handleDelete} value={search._id}>Remove</button>
