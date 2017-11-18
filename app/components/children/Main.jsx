@@ -9,7 +9,7 @@ var Saved = require("./Saved.jsx");
 // Requiring helper.js for making API calls
 var helpers = require("../utils/helpers.js");
 // Create the Main Component
-var Main = React.createClass({
+var Main = React.createReactClass({  //changed from createClass
   // Here we set a generic state
   getInitialState: function() {
     return {
