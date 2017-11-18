@@ -10,13 +10,13 @@ var Schema = mongoose.Schema;
 var CollegeSchema = new Schema({
 
     // Degree type, 2 or 4 years
-    programs: {
-        type: Number,
+    degrees: {
+        type: Number,  //Dave changed from 'Integer' to 'Number'because it triggered an error when you run server.js file. 
         required: true
     },
 
     // Major
-    field: {
+    program: {
         type: String,
         required: true
     },

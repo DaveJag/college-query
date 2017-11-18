@@ -9,7 +9,7 @@ var Saved = require("./Saved.jsx");
 // Requiring helper.js for making API calls
 var helpers = require("../utils/helpers.js");
 // Create the Main Component
-var Main = React.createReactClass({  //changed from createClass
+var Main = React.createClass({
   // Here we set a generic state
   getInitialState: function() {
     return {
@@ -19,9 +19,9 @@ var Main = React.createReactClass({  //changed from createClass
     };
   },
   // Allow children to update the parent.
-  _setSearchFields: function(programs, field, name) {
+  _setSearchFields: function(degrees, field, name) {
   //Added more parameters after test
-    this.setState({ searchTerms: [programs, field, name] });
+    this.setState({ searchTerms: [degrees, program, name] });
   },
   // Allow child to update Mongo data array
   _resetMongoResults: function(newData){

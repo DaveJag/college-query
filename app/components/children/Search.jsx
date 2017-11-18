@@ -48,8 +48,8 @@ var Search = React.createClass({
               // Build array of schools
               that.state.arrayOfSchools.push({
                 id: search._id,
-                programs: search.programs,
-                field: search.field,
+                degrees: search.programs,
+                program: search.program,
                 name: search.name
               });
               return (

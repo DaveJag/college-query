@@ -7,8 +7,8 @@ var Query = React.createClass({
   // Set generic state
   getInitialState: function() {
     return {
-      programs: "",
-      field: "",
+      degrees: "",
+      program: "",
       name: ""
     };
 },
@@ -18,14 +18,14 @@ var Query = React.createClass({
 // clicking search button
     event.preventDefault();
     // Set parent to have search terms
-    this.props._setSearchFeilds(this.state.programs, this.state.field, this.state.name);
+    this.props._setSearchFeilds(this.state.degrees, this.state.program, this.state.name);
     
   },
-  _handleProgramsChange: function(e) {
-    this.setState({programs: e.target.value});
+  _handleDegreesChange: function(e) {
+    this.setState({degrees: e.target.value});
   },
-  _handleFieldChange: function(e) {
-      this.setState({field: e.target.value});
+  _handleProgramChange: function(e) {
+      this.setState({program: e.target.value});
    },
   _handleNameChange: function(e) {
        this.setState({name: e.target.value});
@@ -40,20 +40,108 @@ var Query = React.createClass({
         </div>
         <div className="panel-body text-center">
           <form role="form" onSubmit={this._handleSubmit}>
-//Creates a label for API  data category "programs", displays as Degree Type.  Intially, enter 2 or 4.  Later, add a 
+//Creates a label for API  data category "degrees", displays as Degree Type.  Intially, enter 2 or 4.  Later, add a 
 //drop down menu here
             <div className="form-group col-md-offset-3 col-md-6">
-              <label htmlFor="programs" className="text-center">Degree Type</label>
-              <input type="integer" className="form-control text-center" id="topic" onChange={this._handleProgramsChange} />
+              //<label htmlFor="degrees" className="text-center">Degree Type</label>
+              <label for="degree-type">Choose a degree
+                 <select id="degree-type" name="degree">
+                  <option value="2">Two-year (Associate's)</option>
+                  <option value="3">Four-year (Bachelor's)</option>
+                  </select>
+               </label>
+              <input type="integer" className="form-control text-center" id="topic" onChange={this._handleDegreesChange} />
             </div>
            <br />
-//Creates a label for the API category "field"; displays as Major, a text field user enters.  This can also be a drop down menu.
+//Creates a label for the API category "program"; displays as Major, selected from the drop down menu.  This can also be a drop down menu.
           <div className="form-group col-md-offset-3 col-md-6">
-             <label htmlFor="field">Major</label>
-             <input type="text" className="form-control text-center" id="field" onChange={this._handleFieldChange} />
+             //<label htmlFor="program">Major</label>
+<label for="program">Choose a major
+          <select id="program" name="program">
+            <option value="" selected>Any</option>
+            
+            <option value="agriculture">Agriculture, Agriculture Operations, and Related Sciences</option>
+            
+            <option value="architecture">Architecture and Related Services</option>
+            
+            <option value="ethnic_cultural_gender">Area, Ethnic, Cultural, Gender, and Group Studies</option>
+            
+            <option value="biological">Biological and Biomedical Sciences</option>
+            
+            <option value="business_marketing">Business, Management, Marketing, and Related Support Services</option>
+            
+            <option value="communication">Communication, Journalism, and Related Programs</option>
+            
+            <option value="communications_technology">Communications Technologies/Technicians and Support Services</option>
+            
+            <option value="computer">Computer and Information Sciences and Support Services</option>
+            
+            <option value="construction">Construction Trades</option>
+            
+            <option value="education">Education</option>
+            
+            <option value="engineering">Engineering</option>
+            
+            <option value="engineering_technology">Engineering Technologies and Engineering-Related Fields</option>
+            
+            <option value="english">English Language and Literature/Letters</option>
+            
+            <option value="family_consumer_science">Family and Consumer Sciences/Human Sciences</option>
+            
+            <option value="language">Foreign Languages, Literatures, and Linguistics</option>
+            
+            <option value="health">Health Professions and Related Programs</option>
+            
+            <option value="history">History</option>
+            
+            <option value="security_law_enforcement">Homeland Security, Law Enforcement, Firefighting and Related Protective Services</option>
+            
+            <option value="legal">Legal Professions and Studies</option>
+            
+            <option value="humanities">Liberal Arts and Sciences, General Studies and Humanities</option>
+            
+            <option value="library">Library Science</option>
+            
+            <option value="mathematics">Mathematics and Statistics</option>
+            
+            <option value="mechanic_repair_technology">Mechanic and Repair Technologies/Technicians</option>
+            
+            <option value="military">Military Technologies and Applied Sciences</option>
+            
+            <option value="multidiscipline">Multi/Interdisciplinary Studies</option>
+            
+            <option value="resources">Natural Resources and Conservation</option>
+            
+            <option value="parks_recreation_fitness">Parks, Recreation, Leisure, and Fitness Studies</option>
+            
+            <option value="personal_culinary">Personal and Culinary Services</option>
+            
+            <option value="philosophy_religious">Philosophy and Religious Studies</option>
+            
+            <option value="physical_science">Physical Sciences</option>
+            
+            <option value="precision_production">Precision Production</option>
+            
+            <option value="psychology">Psychology</option>
+            
+            <option value="public_administration_social_service">Public Administration and Social Service Professions</option>
+            
+            <option value="science_technology">Science Technologies/Technicians</option>
+            
+            <option value="social_science">Social Sciences</option>
+            
+            <option value="theology_religious_vocation">Theology and Religious Vocations</option>
+            
+            <option value="transportation">Transportation and Materials Moving</option>
+            
+            <option value="visual_performing">Visual and Performing Arts</option>
+            
+          </select>
+        </label>
+             <input type="text" className="form-control text-center" id="program" onChange={this._handleProgramChange} />
             </div>
           <br />
-//Creates a label for API categroy "name", display as School Name, a text field user enters school name.
+//Creates a label for API categroy "name", display as School Name, a text field where the user enters school name.
        <div className="form-group col-md-offset-3 col-md-6">
            <label htmlFor="name">School Name</label>
            <input type="text" className="form-control text-center" id="name" onChange={this._handleNameChange} />

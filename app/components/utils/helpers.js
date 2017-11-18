@@ -2,15 +2,20 @@
 var axios = require('axios');
 
 // API Request Function
-var schoolQuery = function(programs, field, name){
+var schoolQuery = function(degrees, program, name){
 
   //var authKey = "zCBgIj5wrFlUIvjmWu2CzFPg1PqRWzbc8zqCVnLZ";
   // Dave's key:
-  var authKey = "Jqw0thp4crLxCS338NcnyaeQCzW7gJWJPlTcPR3t";
+var authKey = "Jqw0thp4crLxCS338NcnyaeQCzW7gJWJPlTcPR3t";
+var maxReturns = 100;
 
+//var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key=Jqw0thp4crLxCS338NcnyaeQCzW7gJWJPlTcPR3t + "&degrees=" + degrees + "&program=" + "2013.academics.program_percentage." + program + "&name=" + "school." + name + "&_per_page=100""; 
 
-   var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+ authKey + "&programs=" +
-              programs + "&field=" + field + "&name=" + name;
+//Note: Dave modified the queryURL on 11/18 to get it to compile in webpack. The original is above.
+var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+authKey+"&degrees="+degrees+"&program="+"2013.academics.program_percentage."+program+"&name="+"school."+name+"&_per_page=" + maxReturns; 
+
+//var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+ authKey + "&programs=" +
+ //             programs + "&field=" + field + "&name=" + name;
 
 
   // For reference:

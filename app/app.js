@@ -1,7 +1,8 @@
 // Include Main React Dependencies
 var React = require("react");
 var ReactDOM = require("react-dom");
-
+global.jQuery = require("jQuery");
+var bootstrap = require("bootstrap");
 // Include main parent component
 var Main = require("./components/children/Main.jsx");
 
