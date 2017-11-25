@@ -1,6 +1,8 @@
 // Contains the main-container div that holds the main layout and navigation. 
 // This component also holds sub-components Search and Saved
 // Include React 
+console.log("main");
+
 var React = require("react");
 // Here we include all of the sub-components
 var Query = require("./Query.jsx");
@@ -10,25 +12,32 @@ var Saved = require("./Saved.jsx");
 var helpers = require("../utils/helpers.js");
 // Create the Main Component
 var Main = React.createClass({
+  console.log("create class");
   // Here we set a generic state
   getInitialState: function() {
     return {
       apiResults: [],
       mongoResults: [],
-      searchTerms: ["","",""]
+      // searchTerms: ["","",""]
+      searchTerms: [""]
     };
   },
   // Allow children to update the parent.
-  _setSearchFields: function(degrees, field, name) {
+  // _setSearchFields: function(degrees, field, name) {
+  _setSearchFields: function(field) {
+    console.log("search fields");
   //Added more parameters after test
-    this.setState({ searchTerms: [degrees, program, name] });
+    // this.setState({ searchTerms: [degrees, program, name] });
+    this.setState({ searchTerms: [program] });
   },
   // Allow child to update Mongo data array
   _resetMongoResults: function(newData){
+    console.log("reset mongo results");
     this.setState({ mongoResults: newData} );
   },
   // After Main renders, collect the saved schools from the API endpoint
   componentDidMount: function() {
+    console.log("componentDidMount");
     // Hit the Mongo API to get saved schools
     helpers.apiGet().then(function(query){
       this.setState({mongoResults: query.data});
@@ -44,7 +53,8 @@ var Main = React.createClass({
     // Only hit the API once; that is, if the prev state does not equal the current
     if(this.state.searchTerms != prevState.searchTerms){
       // Run the query for the address
-      helpers.schoolQuery(this.state.searchTerms[0], this.state.searchTerms[1], this.state.searchTerms[2]).then(function(data) {
+      // helpers.schoolQuery(this.state.searchTerms[0], this.state.searchTerms[1], this.state.searchTerms[2]).then(function(data) {
+      helpers.schoolQuery(this.state.searchTerms[0]
         console.log(data);
         this.setState({ apiResults: data });
       }.bind(this));

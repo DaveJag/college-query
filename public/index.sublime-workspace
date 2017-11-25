@@ -1,0 +1,537 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"error",
+				"error"
+			],
+			[
+				"back",
+				"backgroundColor\t(index8.html)"
+			],
+			[
+				"create",
+				"createClass\t(index8.html)"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"Hello",
+				"HelloBootstrap"
+			],
+			[
+				"scrape",
+				"scrape_db\t(server.js)"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"devoured",
+				"devouredburger"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"but",
+				"buttons\t(style.css)"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"best",
+				"bestMatch"
+			],
+			[
+				"p",
+				"products"
+			],
+			[
+				"get",
+				"getQuantity"
+			],
+			[
+				"in",
+				"inquirer"
+			],
+			[
+				"query",
+				"queryAll"
+			],
+			[
+				"total",
+				"totalCost"
+			],
+			[
+				"order",
+				"orderTotal"
+			],
+			[
+				"produc",
+				"productId"
+			],
+			[
+				"pru",
+				"productId"
+			],
+			[
+				"stock",
+				"stock_quantity"
+			],
+			[
+				"product",
+				"product_name"
+			],
+			[
+				"item",
+				"item_id"
+			],
+			[
+				"music",
+				"music_db\t(music.js)"
+			],
+			[
+				"data",
+				"database\t(mysql01.js)"
+			],
+			[
+				"enter",
+				"enterQuestion"
+			],
+			[
+				"card",
+				"cardInfo"
+			],
+			[
+				"log",
+				"logcloze.txt"
+			],
+			[
+				"new",
+				"newBasic"
+			],
+			[
+				"flas",
+				"flashcard"
+			],
+			[
+				"cloze",
+				"clozeData"
+			],
+			[
+				"first",
+				"firstPresident"
+			],
+			[
+				"firstPresident",
+				"firstPresident.front"
+			],
+			[
+				"console",
+				"console.log"
+			],
+			[
+				"cnsole",
+				"console.log\t(liri.js)"
+			],
+			[
+				"conso",
+				"console.log\t(Basic.js)"
+			],
+			[
+				"Cloze",
+				"ClozeCard"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"basic",
+				"BasicCard"
+			],
+			[
+				"Basic",
+				"Basic_Card.js\t(Basic_Card.js)"
+			],
+			[
+				"consoe",
+				"console.log"
+			],
+			[
+				"consol",
+				"console.log"
+			],
+			[
+				"twee",
+				"tweeData"
+			],
+			[
+				"song",
+				"songName"
+			],
+			[
+				"inc",
+				"increaseAge"
+			],
+			[
+				"pri",
+				"printStats"
+			],
+			[
+				"pro",
+				"profession"
+			],
+			[
+				"cnso",
+				"console.log"
+			],
+			[
+				"twi",
+				"twitterKeys\t(keys.js)"
+			],
+			[
+				"Keys",
+				"keys.js"
+			],
+			[
+				"inpu",
+				"inputString"
+			],
+			[
+				"prom",
+				"promptResponse"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 784.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Auto",
+				"AutoFileName: Default Settings"
+			],
+			[
+				"",
+				"AutoFileName: Default Settings"
+			],
+			[
+				"Handlebars",
+				"Snippet: handlebars template"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 856.0
+	},
+	"console":
+	{
+		"height": 142.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/davej/mern-book/pro-mern-stack/package.json",
+		"/C/Users/davej/mern-book/pro-mern-stack/src/App.jsx",
+		"/C/Users/davej/mern-book/pro-mern-stack/static/index.html",
+		"/C/Users/davej/mern-book/pro-mern-stack/server.js",
+		"/C/Users/davej/mern-book/pro-mern-stack/static/App.js",
+		"/C/Users/davej/project3/college-query/package.json",
+		"/C/Users/davej/project3/college-query/app/app.js",
+		"/C/Users/davej/mern-book/pro-mern-stack/static/App.jsx",
+		"/C/Users/davej/mern-book/pro-mern-stack/static/hello.html",
+		"/C/Boot Camp/repos/hw06/GifTastic/assets/javascript/giphy.js",
+		"/C/Boot Camp/repos/hw06/GifTastic/index.html",
+		"/C/Users/davej/Downloads/Saved (3).jsx",
+		"/C/Users/davej/project3/college-query/app/components/children/Main.jsx",
+		"/C/Users/davej/project3/college-query/app/components/children/Query.jsx",
+		"/C/Users/davej/project3/college-query/app/components/children/Saved.jsx",
+		"/C/Users/davej/project3/college-query/app/components/children/Search.jsx",
+		"/C/Users/davej/project3/college-query/webpack.config.js",
+		"/C/Users/davej/project3/college-query/node_modules/sockjs/examples/koa/index.html",
+		"/C/Users/davej/project3/nyt-search-react2/package.json",
+		"/C/Users/davej/project3/college-query/public/bundle.js",
+		"/C/Users/davej/project3/college-query/node_modules/react-dom/cjs/react-dom.development.js",
+		"/C/Users/davej/project3/college-query/models/College.js",
+		"/C/Users/davej/project3/college-query/public/index.html",
+		"/C/Users/davej/project3/college-query/app/components/utils/helpers.js",
+		"/C/Users/davej/project3/nytreact-master/app/components/children/Query.jsx",
+		"/C/Users/davej/project3/nyt-search-react1/public/index.html",
+		"/C/Users/davej/project3/nytreact-master/app/components/children/Main.jsx",
+		"/C/Users/davej/Downloads/Saved (1).jsx",
+		"/C/Users/davej/project3/nytreact-master/app/app.jsx",
+		"/C/Users/davej/project3/college-query/app/app.jsx",
+		"/C/Users/davej/project3/college-query/node_modules/escope/gulpfile.js",
+		"/C/Users/davej/Downloads/Saved.jsx",
+		"/C/Users/davej/project3/nytreact-master/package.json",
+		"/C/Users/davej/project3/nytreact-master/public/bundle.js",
+		"/C/Users/davej/project3/wptest/index.html",
+		"/C/Users/davej/project3/wptest/content.js",
+		"/C/Users/davej/project3/college-query/.babelrc",
+		"/C/Users/davej/project3/college-query/webpack.config2.js",
+		"/C/Users/davej/project3/wptest/entry.js",
+		"/C/Users/davej/project3/wptest/bundle.js",
+		"/C/Users/davej/project3/college-query/controllers/controller.js",
+		"/C/Users/davej/project3/college-query/server.js",
+		"/C/Users/davej/hw/nyt-search-react1/server.js",
+		"/C/Users/davej/project3/nytreact-master/server.js",
+		"/C/Users/davej/hw/nyt-search-react1/app/components/Main.js",
+		"/C/Users/davej/project3/nytreact-master/models/Article.js",
+		"/C/Users/davej/hw/nyt-search-react1/public/index.html",
+		"/C/Users/davej/hw/nyt-search-react1/app/components/utils/helpers.js",
+		"/C/Users/davej/hw/nyt-search-react1/app/components/children/Form.js",
+		"/C/Users/davej/hw/nyt-search-react1/Procfile",
+		"/C/Users/davej/hw/nyt-search-react1/package.json",
+		"/C/Users/davej/hw/nyt-search-react1/webpack.config.js",
+		"/C/Users/davej/heroku_deploy/client/src/App.js",
+		"/C/Users/davej/heroku_deploy/server.js",
+		"/C/Users/davej/heroku_deploy/package.json",
+		"/C/Boot Camp/repos/Stu_ReactRouter/models/book.js",
+		"/C/Boot Camp/repos/Stu_ReactRouter/scripts/seedDB.js",
+		"/C/Users/davej/heroku_deploy/models/index.js",
+		"/C/Users/davej/heroku_deploy/routes/index.js",
+		"/C/Users/davej/hw/nyt-search-react1/app/app.js",
+		"/C/Users/davej/hw/nyt-search-react1/public/bundle.js",
+		"/C/Users/davej/hw/nyt-search-react1/public/images/nyt-headline.png",
+		"/C/Users/davej/hw/nyt-react-search/app/components/utils/helpers.js",
+		"/C/Users/davej/hw/nyt-react-search/models/Article.js",
+		"/C/Users/davej/hw/nyt-react-search/public/index.html",
+		"/C/Users/davej/hw/nyt-search-react1/models/Article.js",
+		"/C/Users/davej/hw/nyt-react-search/server.js",
+		"/C/Users/davej/hw/nyt-search-react1/app/components/children/Results.js",
+		"/C/Boot Camp/homework/Alt-NYT-React-Search/webpack.config.js",
+		"/C/Boot Camp/homework/Alt-NYT-React-Search/app/components/Main.js",
+		"/C/Users/davej/hw/nyt-search-react1/npm-debug.log",
+		"/C/Users/davej/hw/nyt-react-search/package.json",
+		"/C/Boot Camp/repos/Stu_ReactRouter/client/src/utils/API.js",
+		"/C/Users/davej/hw/nyt-search-react1/.gitignore",
+		"/C/Boot Camp/homework/Alt-NYT-React-Search/server.js",
+		"/C/Boot Camp/repos/Stu_ReactRouter/routes/index.js",
+		"/C/Boot Camp/homework/Alt-NYT-React-Search/package.json",
+		"/C/Users/davej/hw/nyt-react-search/app/components/Main.js",
+		"/C/Users/davej/inclass/04-Insertion-Sort/Examples/algorithmStarter.js",
+		"/C/Users/davej/inclass/04-Insertion-Sort/Solved/insertionSort.js",
+		"/C/Boot Camp/homework/Alt-NYT-React-Search/app/components/children/Saved.js",
+		"/C/Users/davej/hw/nyt-react-search/app/components/children/Saved.js",
+		"/C/Users/davej/hw/nyt-react-search/app/components/children/Results.js",
+		"/C/Users/davej/hw/nyt-react-search/app/components/children/Form.js",
+		"/C/Boot Camp/homework/Alt-NYT-React-Search/app/components/children/Results.js",
+		"/C/Boot Camp/homework/Alt-NYT-React-Search/app/components/children/Form.js",
+		"/C/Boot Camp/homework/Alt-NYT-React-Search/app/components/utils/helpers.js",
+		"/C/Boot Camp/homework/Alt-NYT-React-Search/public/bundle.js",
+		"/C/Users/davej/inclass/scraping-with-mongoose/node_modules/domutils/test/tests/helpers.js",
+		"/C/Boot Camp/homework/Alt-NYT-React-Search/public/index.html",
+		"/C/Users/davej/inclass/02-Binary-Search/Examples/binarySearch.js",
+		"/C/Users/davej/inclass/01-Benchmark/Examples/linearSearch.js",
+		"/C/Users/davej/hw/nyt-react-search/app/app.js",
+		"/C/Users/davej/inclass/reactjs/16-Stu_FriendRefactor/Solved/src/App.js",
+		"/C/Users/davej/inclass/reactjs/AJAXFormDelete/Solved/client/node_modules/react-dom/cjs/react-dom.development.js",
+		"/C/Users/davej/inclass/reactjs/AJAXFormDelete/Solved/client/node_modules/babel-plugin-transform-react-display-name/lib/index.js",
+		"/C/Users/davej/inclass/reactjs/AJAXFormDelete/Solved/client/node_modules/react-router/umd/react-router.js",
+		"/C/Users/davej/inclass/reactjs/AJAXFormDelete/Solved/client/node_modules/react-dom/umd/react-dom-server.browser.development.js",
+		"/C/Users/davej/inclass/reactjs/AjaxBooks/client/node_modules/ajv/dist/regenerator.min.js",
+		"/C/Users/davej/inclass/ReactRouter/Unsolved/client/src/pages/Books/Books.js",
+		"/C/Users/davej/inclass/ReactRouter/Unsolved/client/src/pages/Detail/Detail.js",
+		"/C/Users/davej/inclass/reactjs/AjaxBooks/client/node_modules/react-dom/cjs/react-dom.development.js",
+		"/C/Users/davej/inclass/scraping-with-mongoose/node_modules/mongodb-core/lib/topologies/replset_state.js",
+		"/C/Users/davej/inclass/reactjs/AJAXFormDelete/Solved/client/node_modules/handlebars/dist/cjs/handlebars/helpers.js",
+		"/C/Users/davej/inclass/reactjs/AjaxBooks/client/node_modules/handlebars/dist/amd/handlebars/helpers.js",
+		"/C/Users/davej/inclass/reactjs/AJAXFormDelete/Solved/client/node_modules/jsdom/lib/jsdom/living/helpers/document-base-url.js",
+		"/C/Users/davej/inclass/reactjs/AJAXFormDelete/Solved/client/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js",
+		"/C/Users/davej/inclass/reactjs/AJAXFormDelete/Solved/client/node_modules/jsdom/lib/jsdom/living/helpers/focusing.js",
+		"/C/Users/davej/AppData/Local/Temp/Temp1_NYT-React-Search-master.zip/NYT-React-Search-master/app/app.js",
+		"/C/Boot Camp/homework/Alt-NYT-React-Search/app/app.js",
+		"/C/Users/davej/AppData/Local/Temp/Temp1_02-Stu_Console-IO.zip/02-Stu_Console-IO/Solved/console/ConsoleIO.java",
+		"/C/Boot Camp/homework/Alt-NYT-React-Search/models/Article.js",
+		"/C/Users/davej/Downloads/eclipse-java-kepler-SR1-win32-x86_64/eclipse/eclipse.ini",
+		"/C/Users/davej/hw/nyt-react-search/index.js",
+		"/C/Users/davej/inclass/reactjs/AjaxBooks/package.json",
+		"/C/Boot Camp/homework/NYT-React-Search/server.js",
+		"/C/Users/davej/mongoose/package.json",
+		"/C/Boot Camp/homework/burger/server.js",
+		"/C/Users/davej/AppData/Roaming/Sublime Text 3/Packages/Babel/Babel.sublime-settings",
+		"/C/Users/davej/inclass/reactjs/AjaxBooks/client/src/pages/Books/Books.js",
+		"/C/Users/davej/inclass/reactjs/AjaxBooks/client/src/utils/API.js",
+		"/C/Users/davej/inclass/reactjs/AJAXFormDelete/Solved/client/node_modules/react-dom/index.js",
+		"/C/Users/davej/unhbootcamp/src/client/src/App.js",
+		"/C/Users/davej/Desktop/unhbootcamp/src/App.js",
+		"/C/Users/davej/unhbootcamp/src/App.js",
+		"/C/Users/davej/unhbootcamp/src/components/PortfolioContainer.js",
+		"/C/Users/davej/unhbootcamp/src/components/Navpills.js",
+		"/C/Users/davej/inclass/reactjs/Form.js"
+	],
+	"find":
+	{
+		"height": 54.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 54.0
+	},
+	"input":
+	{
+		"height": 87.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 100.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"views\\form.handlebars"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 1000.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 760.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 375.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}

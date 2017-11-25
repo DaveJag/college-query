@@ -7,9 +7,9 @@ var Query = React.createClass({
   // Set generic state
   getInitialState: function() {
     return {
-      degrees: "",
+      // degrees: "",
       program: "",
-      name: ""
+      // name: ""
     };
 },
   // When user submits
@@ -18,42 +18,43 @@ var Query = React.createClass({
 // clicking search button
     event.preventDefault();
     // Set parent to have search terms
-    this.props._setSearchFeilds(this.state.degrees, this.state.program, this.state.name);
+    // this.props._setSearchFeilds(this.state.degrees, this.state.program, this.state.name);
+    this.props._setSearchFeilds(this.state.program);
     
   },
-  _handleDegreesChange: function(e) {
-    this.setState({degrees: e.target.value});
-  },
+  // _handleDegreesChange: function(e) {
+  //   this.setState({degrees: e.target.value});
+  // },
   _handleProgramChange: function(e) {
       this.setState({program: e.target.value});
    },
-  _handleNameChange: function(e) {
-       this.setState({name: e.target.value});
-   },
+  // _handleNameChange: function(e) {
+  //      this.setState({name: e.target.value});
+  //  },
   // Render the Query data form, first Div at the top of the screen to enter search criteria
   render: function() {
     return (
       <div className="panel panel-default">
-//Creates a header called Search
+{/*Creates a header called Search*/}
         <div className="panel-heading">
           <h3 className="panel-title text-center" style={ {fontSize: "20px"} }><i><b>Search</b></i></h3>
         </div>
         <div className="panel-body text-center">
           <form role="form" onSubmit={this._handleSubmit}>
-//Creates a label for API  data category "degrees", displays as Degree Type.  Intially, enter 2 or 4.  Later, add a 
-//drop down menu here
-            <div className="form-group col-md-offset-3 col-md-6">
-              //<label htmlFor="degrees" className="text-center">Degree Type</label>
-              <label for="degree-type">Choose a degree
-                 <select id="degree-type" name="degree">
-                  <option value="2">Two-year (Associate's)</option>
-                  <option value="3">Four-year (Bachelor's)</option>
-                  </select>
-               </label>
-              <input type="integer" className="form-control text-center" id="topic" onChange={this._handleDegreesChange} />
-            </div>
+{/*Creates a label for API  data category "degrees", displays as Degree Type.  Intially, enter 2 or 4.  Later, add a 
+//drop down menu here*/}
+             {/*<div className="form-group col-md-offset-3 col-md-6">
+               //<label htmlFor="degrees" className="text-center">Degree Type</label>
+               <label for="degree-type">Choose a degree
+                  <select id="degree-type" name="degree">
+                   <option value="2">Two-year (Associate's)</option>
+                   <option value="3">Four-year (Bachelor's)</option>
+                   </select>
+                </label>
+               <input type="integer" className="form-control text-center" id="topic" onChange={this._handleDegreesChange} />
+             </div>*/}
            <br />
-//Creates a label for the API category "program"; displays as Major, selected from the drop down menu.  This can also be a drop down menu.
+{/*Creates a label for the API category "program"; displays as Major, selected from the drop down menu.  This can also be a drop down menu.*/}
           <div className="form-group col-md-offset-3 col-md-6">
              //<label htmlFor="program">Major</label>
 <label for="program">Choose a major
@@ -141,13 +142,13 @@ var Query = React.createClass({
              <input type="text" className="form-control text-center" id="program" onChange={this._handleProgramChange} />
             </div>
           <br />
-//Creates a label for API categroy "name", display as School Name, a text field where the user enters school name.
-       <div className="form-group col-md-offset-3 col-md-6">
+{/*Creates a label for API categroy "name", display as School Name, a text field where the user enters school name.*/}
+       {/*<div className="form-group col-md-offset-3 col-md-6">
            <label htmlFor="name">School Name</label>
            <input type="text" className="form-control text-center" id="name" onChange={this._handleNameChange} />
-          </div>
+          </div>*/}
          <br />
-//Creates Search button
+{/*Creates Search button*/}
             <button type="submit" className="btn btn-info col-md-offset-5 col-md-2" id="searchBtn">Search</button>
           </form>
         </div>

@@ -2,29 +2,32 @@
 var axios = require('axios');
 
 // API Request Function
-var schoolQuery = function(degrees, program, name){
+// var schoolQuery = function(degrees, program, name){
+// var schoolQuery = function(program, name){
+var schoolQuery = function(program){
 
   //var authKey = "zCBgIj5wrFlUIvjmWu2CzFPg1PqRWzbc8zqCVnLZ";
   // Dave's key:
 var authKey = "Jqw0thp4crLxCS338NcnyaeQCzW7gJWJPlTcPR3t";
 var maxReturns = 100;
 
-//var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key=Jqw0thp4crLxCS338NcnyaeQCzW7gJWJPlTcPR3t + "&degrees=" + degrees + "&program=" + "2013.academics.program_percentage." + program + "&name=" + "school." + name + "&_per_page=100""; 
+//comment one of the following out when running
 
-//Note: Dave modified the queryURL on 11/18 to get it to compile in webpack. The original is above.
-var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+authKey+"&degrees="+degrees+"&program="+"2013.academics.program_percentage."+program+"&name="+"school."+name+"&_per_page=" + maxReturns; 
+// var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+authKey+"&program="+"2015.academics.program.bachelors."+program+"=1&_fields=school.name&_per_page=" + maxReturns; 
 
-//var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+ authKey + "&programs=" +
- //             programs + "&field=" + field + "&name=" + name;
+// var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+authKey + "2015.academics.program.bachelors."+program+"=1&_fields=school.name&_per_page=" + maxReturns;
 
+// var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key=Jqw0thp4crLxCS338NcnyaeQCzW7gJWJPlTcPR3t&2015.academics.program.bachelors.english=1&_fields=school.name"
 
-  // For reference:
-  //var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" + authKey + "&q=" +
-  //                topic + "&begin_date=" + beginYear + "0101" + "&end_date=" + endYear + "1231";
+//The following two did not return errors in the call:
 
-  //var queryURL = "http://api.data.gov/ed/collegescorecard/v1/schools"
-  //picc.API.url = 'https://api.data.gov/ed/collegescorecard/v1/';
+// var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+authKey + "&2015.academics.program.bachelors."+program+"=1";
 
+var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+authKey+"&2015.academics.program.bachelors."+program+"=1&_fields=id,school.name&_per_page=" + maxReturns;
+
+console.log("zxx results" + queryURL);
+
+// var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+authKey+"&program="+"2015.academics.program.bachelors."+program+"=1&_fields=" + "&name="+"school."+name+"&_per_page=" + maxReturns; 
 
 
   // Create a JavaScript *Promise*
@@ -32,6 +35,7 @@ var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key
 
     // API get request
     axios.get(queryURL).then(function(response) {
+      console.log("response" + response);
 
       var result = [];
 
@@ -79,9 +83,10 @@ var apiSave = function(schoolObj){
 
     // Re-format the school Object to match the Mongo Model (ie we need to take off the the id)
     var params = new URLSearchParams();
-    params.append("programs", schoolObj.programs);
-    params.append("field", schoolObj.field);
-    params.append("name", schoolObj.name);
+    // params.append("programs", schoolObj.programs);
+    // params.append("field", schoolObj.field);
+    params.append("school.name", schoolObj.name);
+    console.log("SCHOOL NAME",schoolObj.name);
     axios.post(apiURL, params).then(function(response){
 
       // Error handling / fullfil promise if successful query
