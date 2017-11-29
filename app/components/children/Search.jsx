@@ -47,18 +47,18 @@ var Search = React.createClass({
             {this.props.apiResults.map(function(search, i) {
               // Build array of schools
               that.state.arrayOfSchools.push({
-                // id: search._id,
+                id: search._id,
                 // degrees: search.programs,
                 // program: search.program,
                 // name: search.name
                 // name: search.school.name
-                name: search
+                name: search["school.name"]``
               });
               return (
                 <li key={search.id} className="list-group-item" style={ {borderWidth: "0px"} }>
                   <div className="input-group">
                     <div type="text" className="form-control">
-                      <b><a href={search.school} target="_new" style={ {color: "black"} }>{search.school}</a></b>                 
+                      <b><a href={search["school.school_url"]} target="_new" style={ {color: "black"} }>{search["school.name"]}</a></b>                 
                       {/*<i> {search.pub_date.substring(0, 10)}</i>
                     </div> */}      
                     <span className="input-group-btn">

@@ -9,6 +9,7 @@ var Query = React.createClass({
     return {
       // degrees: "",
       program: "",
+      region_id: ""
       // name: ""
     };
 },
@@ -56,9 +57,9 @@ var Query = React.createClass({
            <br />
 {/*Creates a label for the API category "program"; displays as Major, selected from the drop down menu.  This can also be a drop down menu.*/}
           <div className="form-group col-md-offset-3 col-md-6">
-             //<label htmlFor="program">Major</label>
-<label for="program">Choose a major
-          <select id="program" name="program">
+          this.state = {value: "agriculture"};
+          <label htmlFor="program">Choose a major:</label>
+          <select value={this.state.value} id="program" name="program">
             <option value="" selected>Any</option>
             
             <option value="agriculture">Agriculture, Agriculture Operations, and Related Sciences</option>
@@ -138,10 +139,35 @@ var Query = React.createClass({
             <option value="visual_performing">Visual and Performing Arts</option>
             
           </select>
-        </label>
+        
              <input type="text" className="form-control text-center" id="program" onChange={this._handleProgramChange} />
             </div>
           <br />
+
+       {/* Region drop-down field */}
+        <div className="form-group col-md-offset-3 col-md-6">
+        this.state = {value: "1"};
+              {/*} <label htmlFor="regions" className="text-center">Region (USA)</label>  */}
+               <label htmlFor="region-type">Select a region:</label>
+                  <select value={this.state.value} id="region-type" name="region-type">
+                      <option value="0">U.S. Service School</option>
+                      <option value="1">New England (CT, ME, MA, NH, RI, VT)</option>
+                      <option value="2">Mid East (DE, DC, MD, NJ, NY, PA)</option>
+                      <option value="3">Great Lakes (IL, IN, MI, OH, WI)</option>
+                      <option value="4">Plains (IA, KS, MN, MO, NE, ND, SD)</option>
+                      <option value="5">Southeast (AL, AR, FL, GA, KY, LA, MS, NC, SC, TN, VA, WV)</option>
+                      <option value="6">Southwest (AZ, NM, OK, TX)</option>
+                      <option value="7">Rocky Mountains (CO, ID, MT, UT, WY)</option>
+                      <option value="8">Far West (AK, CA, HI, NV, OR, WA)</option>
+                      <option value="9">Outlying Areas (AS, FM, GU, MH, MP, PR, PW, VI)</option>
+                  </select>
+                
+                  <input type="integer" className="form-control text-center" id="region-type" onChange={this._handleRegionChange} />
+        </div> 
+ 
+
+
+
 {/*Creates a label for API categroy "name", display as School Name, a text field where the user enters school name.*/}
        {/*<div className="form-group col-md-offset-3 col-md-6">
            <label htmlFor="name">School Name</label>

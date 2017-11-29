@@ -4,9 +4,12 @@
   "description": "Project 3 - An application to help students locate colleges by degree, location, and other criteria.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel src --presets react,es2015 --out-dir static",
+    "watch": "babel src --presets react,es2015 --out-dir static --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
     "build": "webpack -p"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DaveJag/college-query.git"

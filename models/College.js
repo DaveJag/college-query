@@ -16,16 +16,16 @@ var CollegeSchema = new Schema({
     // },
 
     // Major
-    program: {
-        type: String,
-        required: true
-    },
-
-    // School Name
-    // name: {
+    // program: {
     //     type: String,
     //     required: true
-    // }
+    // },
+
+    // School Name
+    name: {
+        type: String,
+        required: true
+    }
 
     /*
     },

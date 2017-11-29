@@ -23,7 +23,7 @@ var maxReturns = 100;
 
 // var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+authKey + "&2015.academics.program.bachelors."+program+"=1";
 
-var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+authKey+"&2015.academics.program.bachelors."+program+"=1&_fields=id,school.name&_per_page=" + maxReturns;
+var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+authKey+"&2015.academics.program.bachelors."+program+"=1&_fields=id,school.name,school.school_url&_per_page=" + maxReturns;
 
 console.log("zxx results" + queryURL);
 
@@ -85,7 +85,8 @@ var apiSave = function(schoolObj){
     var params = new URLSearchParams();
     // params.append("programs", schoolObj.programs);
     // params.append("field", schoolObj.field);
-    params.append("school.name", schoolObj.name);
+    params.append("name", schoolObj.name);
+    // params.append("school.name", schoolObj.name);
     console.log("SCHOOL NAME",schoolObj.name);
     axios.post(apiURL, params).then(function(response){
 
