@@ -12,7 +12,6 @@ var Saved = require("./Saved.jsx");
 var helpers = require("../utils/helpers.js");
 // Create the Main Component
 var Main = React.createClass({
-  console.log("create class");
   // Here we set a generic state
   getInitialState: function() {
     return {
@@ -54,7 +53,7 @@ var Main = React.createClass({
     if(this.state.searchTerms != prevState.searchTerms){
       // Run the query for the address
       // helpers.schoolQuery(this.state.searchTerms[0], this.state.searchTerms[1], this.state.searchTerms[2]).then(function(data) {
-      helpers.schoolQuery(this.state.searchTerms[0]
+      helpers.schoolQuery(this.state.searchTerms[0]).then(function(data) {
         console.log(data);
         this.setState({ apiResults: data });
       }.bind(this));

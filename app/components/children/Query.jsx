@@ -55,9 +55,7 @@ var Query = React.createClass({
                <input type="integer" className="form-control text-center" id="topic" onChange={this._handleDegreesChange} />
              </div>*/}
            <br />
-{/*Creates a label for the API category "program"; displays as Major, selected from the drop down menu.  This can also be a drop down menu.*/}
           <div className="form-group col-md-offset-3 col-md-6">
-          this.state = {value: "agriculture"};
           <label htmlFor="program">Choose a major:</label>
           <select value={this.state.value} id="program" name="program">
             <option value="" selected>Any</option>
@@ -146,7 +144,6 @@ var Query = React.createClass({
 
        {/* Region drop-down field */}
         <div className="form-group col-md-offset-3 col-md-6">
-        this.state = {value: "1"};
               {/*} <label htmlFor="regions" className="text-center">Region (USA)</label>  */}
                <label htmlFor="region-type">Select a region:</label>
                   <select value={this.state.value} id="region-type" name="region-type">

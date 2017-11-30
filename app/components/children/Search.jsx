@@ -59,8 +59,8 @@ var Search = React.createClass({
                   <div className="input-group">
                     <div type="text" className="form-control">
                       <b><a href={search["school.school_url"]} target="_new" style={ {color: "black"} }>{search["school.name"]}</a></b>                 
-                      {/*<i> {search.pub_date.substring(0, 10)}</i>
-                    </div> */}      
+                      {/*<i> {search.pub_date.substring(0, 10)}</i>*/}
+                    </div>       
                     <span className="input-group-btn">
                       <button className="btn btn-success" type="button" onClick={that._handleSave} value={search.id}>Save</button>
                     </span>
