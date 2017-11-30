@@ -25,7 +25,7 @@ var CollegeSchema = new Schema({
     name: {
         type: String,
         required: true
-    }
+    },
 
     /*
     },
@@ -34,14 +34,15 @@ var CollegeSchema = new Schema({
         type: String,
         required: true
     },
-
+*/
     //School region by ID
     region_id: {
-        type: Integer,
+        type: Number,
         required: true
-    },
-
-     //School state
+    }
+/*
+     //School state         01  0
+     2
     state: {
           type: String,
          required: true
